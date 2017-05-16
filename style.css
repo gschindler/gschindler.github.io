@@ -1,5 +1,5 @@
 html, body {
-  background: white;
+  background: #FAFAFA;
   color: #001837;
   font-size: 24px;
   font-family: 'Roboto Mono', monospace;
@@ -10,9 +10,14 @@ html, body {
 }
 
 .center {
-  margin:0 auto;
+  background: white;
   padding: 100px 0 74px 0;
+}
+
+.interior {
   width: 620px;
+  margin:0 auto;
+  background: white;
 }
 
 a {
@@ -48,35 +53,37 @@ p {
 
 .footer {
   background: #FAFAFA;
-}
-
-.footer-center {
-  margin:0 auto;
+  margin: 0 auto;
   padding: 100px 0 100px 0;
   width: 620px;
+}
+
+a.footer-link:first-child {
+  display: block;
+  padding-bottom: 36px;
 }
 
 @media only screen and (max-width: 720px), /*620 + 60px*/
 only screen and (min-device-width : 320px) and (max-device-width : 720px) and (orientation : portrait),
 only screen and (min-device-width : 320px) and (max-device-width : 720px) and (orientation : landscape) {
   
-  .center, .footer-center {
+  .center {
     padding: 50px 0 14px;
+  }
+  
+  .interior {
+    padding: 0;
     width: -webkit-calc(100% - 100px);
     width: -moz-calc(100% - 100px);
     width: -o-calc(100% - 100px);
     width: -ms-calc(100% - 100px);
   }
   
-  .footer-center {
-    padding: 50px 0;
+  .footer {
+    padding: 50px 0 50px;
     width: -webkit-calc(100% - 100px);
     width: -moz-calc(100% - 100px);
     width: -o-calc(100% - 100px);
     width: -ms-calc(100% - 100px);
   }
 }
-
-/** {
-  box-shadow: inset 0 0 1px red;
-}*/
