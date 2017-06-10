@@ -58,9 +58,13 @@ p {
   width: 620px;
 }
 
-a.footer-link:first-child {
+a.footer-link {
   display: block;
   padding-bottom: 36px;
+}
+
+a.footer-link:last-child {
+  padding-bottom: 0;
 }
 
 @media only screen and (max-width: 720px), /*620 + 60px*/
@@ -73,17 +77,17 @@ only screen and (min-device-width : 320px) and (max-device-width : 720px) and (o
   
   .interior {
     padding: 0;
-    width: -webkit-calc(100% - 100px);
-    width: -moz-calc(100% - 100px);
-    width: -o-calc(100% - 100px);
-    width: -ms-calc(100% - 100px);
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    width: -o-calc(100% - 80px);
+    width: -ms-calc(100% - 80px);
   }
   
   .footer {
     padding: 50px 0 50px;
-    width: -webkit-calc(100% - 100px);
-    width: -moz-calc(100% - 100px);
-    width: -o-calc(100% - 100px);
-    width: -ms-calc(100% - 100px);
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    width: -o-calc(100% - 80px);
+    width: -ms-calc(100% - 80px);
   }
 }
