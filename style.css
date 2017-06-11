@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a.p-link:hover, a:hover .footer-text {
   text-decoration: underline;
 }
 
@@ -37,8 +37,8 @@ a:hover {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 22px;
-  margin-left: 20px;
-  padding: 2px 6px;
+  margin-left: 15px;
+  padding: 1px 6px;
   position: relative;
   top: -3px;
 }
@@ -65,6 +65,19 @@ a.footer-link {
 
 a.footer-link:last-child {
   padding-bottom: 0;
+}
+
+.footer-text {
+  display: inline-block;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 720px), /*620 + 60px*/
