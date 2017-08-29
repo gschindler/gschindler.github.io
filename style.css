@@ -1,8 +1,10 @@
+@import url('https://rsms.me/interface/interface.css');
+
 html, body {
   background: #FAFAFA;
   color: #001837;
   font-size: 24px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Interface', monospace;
   font-weight: 400;
   line-height: 36px;
   -webkit-font-smoothing: antialiased;
@@ -22,22 +24,31 @@ html, body {
 
 a {
   color: blue;
+  color: #001837;
+  font-weight: 500;
   text-decoration: none;
 }
 
-a.p-link:hover, a:hover .footer-text {
-  text-decoration: underline;
+a:hover {
+  color: blue;
+}
+
+a:hover .footer-text .new {
+  background: blue;
 }
 
 .new {
-  background: blue;
+  background: rgba(0, 24, 55, .6);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   color: white;
   display: inline-block;
   font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 22px;
-  margin-left: 15px;
+  margin-left: 10px;
   padding: 1px 6px;
   position: relative;
   top: -3px;
@@ -52,9 +63,8 @@ p {
 }
 
 .footer {
-  background: #FAFAFA;
   margin: 0 auto;
-  padding: 100px 0 100px 0;
+  padding: 100px 0 50px 0;
   width: 620px;
 }
 
@@ -72,12 +82,24 @@ a.footer-link:last-child {
 }
 
 .footer-title {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  color: rgba(0, 24, 55, .6);
+  font-size: 18px;
+  font-weight: 500;
   line-height: 22px;
   margin-bottom: 5px;
-  text-transform: uppercase;
+}
+
+.connect {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 620px;
+}
+
+.connect-link {
+  color: rgba(0, 24, 55, .6);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 @media only screen and (max-width: 720px), /*620 + 60px*/
@@ -98,6 +120,14 @@ only screen and (min-device-width : 320px) and (max-device-width : 720px) and (o
   
   .footer {
     padding: 50px 0 50px;
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    width: -o-calc(100% - 80px);
+    width: -ms-calc(100% - 80px);
+  }
+  
+  .connect {
+    padding-bottom: 50px;
     width: -webkit-calc(100% - 80px);
     width: -moz-calc(100% - 80px);
     width: -o-calc(100% - 80px);
