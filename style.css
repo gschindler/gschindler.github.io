@@ -69,12 +69,13 @@ footer {
   display: flex;
   font-size: 21px;
   flex-direction: row;
+  flex-wrap: wrap;
   line-height: 28px;
   padding: 0 0 72px;
 }
 
 footer h2 {
-  margin: 24px 32px 0 0;
+  margin: 24px 24px 0 0;
 }
 
 footer h2:hover {
