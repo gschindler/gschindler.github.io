@@ -399,6 +399,29 @@ only screen and (min-device-width : 320px) and (max-device-width : 720px) and (o
 only screen and (min-device-width : 320px) and (max-device-width : 720px) and (orientation : portrait),
 only screen and (min-device-width : 320px) and (max-device-width : 720px) and (orientation : landscape) {
 
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  h4 {
+    line-height: 28px;
+  }
+
+  header .logo, .left-footer {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .intro {
+    text-align: left;
+  }
+
   .grid-half .grid-image-container .grid-images {
     height: initial;
     width: 100%;
