@@ -114,6 +114,16 @@ footer span.copyright {
   position: relative;
 }
 
+footer h3 {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+footer a:hover h3 {
+  background-color:black;
+  color:white;
+}
+
 nav.darkmode-footer a:hover {
   background-color: white;
 }
@@ -253,7 +263,7 @@ a.grid-description-link {
   text-decoration: underline;
 }
 
-a.grid-description-link:hover {
+a.grid-description-link span:hover {
   background-color: black;
   color: white;
   text-decoration: none;
@@ -393,6 +403,15 @@ only screen and (min-device-width : 320px) and (max-device-width : 720px) and (o
     width: 100%;
     height: initial;
   }
+
+  .grid-image-mobile-right .grid-images {
+    margin: initial !important;
+    float: right;
+  }
+
+  .grid-image-mobile-left .grid-images {
+    margin: initial !important;
+  }
 }
 
 @media only screen and (max-width: 568px), /*520 + 48px*/
@@ -404,18 +423,22 @@ only screen and (min-device-width : 320px) and (max-device-width : 720px) and (o
     line-height: 40px;
   }
 
+  h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
   h4 {
     line-height: 28px;
   }
 
-  header .logo, .left-footer {
-    display: none;
-  }
-
   nav {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+
+  header nav a{
+    margin-left: 24px;
   }
 
   .intro {
@@ -427,11 +450,34 @@ only screen and (min-device-width : 320px) and (max-device-width : 720px) and (o
     width: 100%;
   }
 
+  .grid-description {
+    text-align: left;
+  }
+
+  a.grid-description-link {
+    display: block;
+    margin-top: 8px;
+  }
+
   .header-left h3 {
     display: none;
   }
 
   .header-left .arrow {
     margin: 0;
+  }
+
+  footer .left-footer {
+    display:none;
+  }
+
+  footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  footer nav a{
+    margin: 0 32px 0 0;
   }
 }
